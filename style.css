@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: #FAFAF8;
+  background: #0E0E0E; /* negro elegante */
   font-family: "Cormorant Garamond", serif;
-  color: #222;
+  color: #F2F2F2; /* blanco suave */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,7 @@ body {
 
 #etiqueta {
   font-size: 0.9rem;
-  color: #999;
+  color: #888; /* gris suave sobre negro */
   margin-bottom: 20px;
 }
 
@@ -31,16 +31,22 @@ body {
 
 .btn {
   background: transparent;
-  border: 1px solid #DDD;
+  border: 1px solid #444; /* gris profundo */
   padding: 10px 24px;
   font-size: 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.2s;
+  color: #EEE;   /* evita el azul */
+  text-decoration: none; /* por si acaso el navegador lo interpreta como link */
+  outline: none; /* evita azul al hacer click */
+  -webkit-tap-highlight-color: transparent; /* evita highlight móvil */
 }
 
+/* hover sutil */
 .btn:hover {
-  border-color: #CCC;
+  border-color: #666;
+  background: #181818;
 }
 
 .fade {
