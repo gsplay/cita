@@ -1,1 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #FAFAF8;
+  font-family: "Cormorant Garamond", serif;
+  color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
+.container {
+  max-width: 650px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#etiqueta {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 20px;
+}
+
+#cita {
+  font-size: 2rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  min-height: 150px;
+}
+
+.btn {
+  background: transparent;
+  border: 1px solid #DDD;
+  padding: 10px 24px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  border-color: #CCC;
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.paypal-box {
+  margin-top: 30px;
+  display: none;
+  color: #444;
+  font-size: 1rem;
+}
