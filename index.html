@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cita del día</title>
 
+  <!-- Tipografía elegante y calma -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD"></script>
+</head>
+<body>
+
+  <div class="container">
+    <p id="etiqueta">Cita · Hoy</p>
+    <div id="cita" class="fade"></div>
+
+    <button id="otra" class="btn">Mostrar otra cita</button>
+
+    <div id="pago" class="paypal-box">
+      <p>Has visto las 5 citas de hoy.<br>Desbloqueá acceso ilimitado por 24h:</p>
+      <div id="paypal-button-container"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
